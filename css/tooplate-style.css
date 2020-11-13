@@ -19,7 +19,6 @@ a {
 }
 
 a:hover {
-    background-color: grey;
     color: darkred;
 }
 
@@ -29,20 +28,32 @@ a.active {
     text-decoration: none;
 }
 
+.carousel-control-prev a {
+    text-decoration: none;
+}
+
+.carousel-control-prev a::hover {
+    background: none;
+}
+
 .tm-welcome-section {
-    height: 83vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #993532;
-    background-image: url('../img/ultima.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
     background-position: center center;
     color: white;
-    max-height: 600px;
-    min-height: 600px;
+    max-height: 750px;
+    min-height: 750px;
+}
+
+.logo {
+    position: absolute;
+    z-index: 1;
+    top: 335px;
+    right: 172px;
 }
 
 .tm-welcome {
@@ -330,6 +341,10 @@ figure.effect-sadie:hover p {
 
 .EstilosTituloPrincipal:hover {
     font-size: 50px;
+    cursor: pointer;
+}
+
+.foto:hover {
     cursor: pointer;
 }
 
